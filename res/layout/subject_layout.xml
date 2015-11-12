@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+	   
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	  android:layout_marginTop="5dp"
+	    android:background="#fff"
+	  
+	   >
+	    <ImageView
+        android:id="@+id/ivImg"
+        android:layout_width="90dp"
+        android:layout_height="65dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/cc_default_news_img" />
+   		 <TextView 
+        android:id="@+id/ivTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="这是一个头条"
+        android:layout_toRightOf="@id/ivImg"
+        android:layout_marginLeft="5dp"
+        android:textSize="18sp"
+        android:textColor="#000"/>
+
+    
+
+	</RelativeLayout>
+
+</LinearLayout>

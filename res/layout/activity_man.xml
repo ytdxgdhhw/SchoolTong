@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManActivity" >
+		 <HorizontalScrollView android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#eee"
+        android:id="@+id/hh">
+	     <LinearLayout android:layout_width="wrap_content"
+	         android:layout_height="match_parent"
+	         android:orientation="horizontal"
+	         android:id="@+id/navContainer">
+	         
+	     </LinearLayout>
+	 </HorizontalScrollView>
+		<ListView android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:id="@+id/lvSelector"
+		    android:layout_below="@+id/hh"
+		    android:layout_above="@+id/rightNow"
+		    >
+		    
+		</ListView>
+		<TextView android:layout_width="match_parent"
+		    android:layout_height="48dp"
+		    android:layout_alignParentBottom="true"
+		    android:text="当前联系人"
+		    android:id="@+id/rightNow"
+		    android:gravity="center_vertical"
+		    android:background="#eee"
+		  />
+</RelativeLayout>

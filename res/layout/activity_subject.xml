@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubjectActivity" >
+<RelativeLayout 
+    android:layout_below="@+id/ll"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp" >
+    <ImageView 
+        android:id="@+id/ivtt"
+        android:layout_width="72dp"
+        android:layout_height="53dp"
+        android:src="@drawable/news1_1"
+        android:scaleType="fitXY"
+        />
+
+	<TextView
+	    android:id="@+id/tvtt"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/ivtt"
+	    android:layout_toRightOf="@+id/ivtt"
+	    android:ellipsize="end"
+	    android:singleLine="true"
+	    android:text="我校及时开治安东方会计师对方  " />
+
+	<TextView
+	    android:id="@+id/tvvv"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	     android:layout_alignTop="@+id/ivtt"
+	  
+	    android:layout_alignLeft="@+id/tvtt"
+	    android:maxLines="1"
+	    android:text="2015年08月14日  " />
+
+</RelativeLayout>  
+		 <TextView
+	        android:id="@+id/tvnei"
+	        android:layout_width="match_parent"
+	        android:layout_height="40dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/rl"
+	        android:background="#eee"
+	        android:gravity="center_vertical"
+	        android:text="专题内容" />
+	    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/subView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvnei"
+       >
+        
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+	        
+</RelativeLayout>

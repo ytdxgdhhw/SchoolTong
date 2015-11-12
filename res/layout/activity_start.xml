@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity" 
+    android:background="@drawable/login_background"
+    android:id="@+id/rlStart">
+
+    <ImageView	android:id="@+id/ivStart"
+        android:layout_width="80dp"
+        android:layout_height="65dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="82dp"
+        android:src="@drawable/logo"
+        android:scaleType="fitXY" />
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="校园通"
+        android:textSize="30sp"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+       	android:layout_below="@+id/ivStart"
+       	android:layout_marginTop="20dp"/>
+
+</RelativeLayout>

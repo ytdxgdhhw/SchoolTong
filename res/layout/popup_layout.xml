@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#eee">
+   <Button android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="拍照"
+       android:onClick="doPhoto"
+       android:background="#fff"/>
+    <Button android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="选取现有"
+       android:onClick="doSearch"
+       android:background="#fff"/>
+     <Button android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="取消"
+       android:id="@+id/btEsc"
+     
+       android:layout_marginTop="1dp"
+       android:background="#ccc"/>
+
+</LinearLayout>

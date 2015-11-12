@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   
+    tools:context=".InfoActivity" 
+    android:background="#fff">
+	<RadioGroup android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:orientation="horizontal"
+    android:checkedButton="1"
+    android:id="@+id/rg"
+    >
+    <RadioButton android:id="@+id/btGet"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="已收"
+        android:gravity="center"
+        android:textColor="@color/info_selector"
+       	android:button="@null"
+        android:layout_weight="1"/>
+    <RadioButton android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="已发"
+         android:textColor="@color/info_selector"
+        android:gravity="center"
+        android:button="@null"
+        android:layout_weight="1"/>
+	</RadioGroup>
+	<TextView android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="#eee"
+	    android:layout_below="@+id/rg"/>
+	
+</RelativeLayout>

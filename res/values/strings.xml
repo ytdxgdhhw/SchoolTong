@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">cc</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_subject">SubjectActivity</string>
+    <string name="title_activity_info">InfoActivity</string>
+    <string name="title_activity_creat_info">CreatInfoActivity</string>
+    <string name="title_activity_man">ManActivity</string>
+    <string name="title_activity_internet">InternetActivity</string>
+    <string name="title_activity_re_set">ReSetActivity</string>
+    <string name="title_activity_collect">CollectActivity</string>
+
+</resources>

@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UserActivity" 
+    android:background="#EEEEEE">
+
+<RelativeLayout android:id="@+id/rlUser"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_marginTop="20dp"
+    android:background="#fff" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/cc_user" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_marginLeft="24dp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="111111" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignLeft="@+id/textView1"
+        android:text=" 王五" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/cc_arrow_right" />
+
+	</RelativeLayout>
+	
+	<RelativeLayout android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    android:orientation="horizontal"
+	    android:background="#fff"
+	    android:id="@+id/reSet"
+	    android:layout_marginTop="20dp">
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="密码修改"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"/>
+     <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+     	android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/cc_arrow_right" />
+	</RelativeLayout>
+		<RelativeLayout android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    android:orientation="horizontal"
+	    android:background="#fff"
+	    android:onClick="doCollect"
+	    android:layout_marginTop="2dp">
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="个人收藏"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"/>
+     <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+     	android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/cc_arrow_right" />
+	</RelativeLayout>
+	<RelativeLayout android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    android:orientation="horizontal"
+	    android:background="#fff"
+	    android:onClick="gengXin"
+	    android:layout_marginTop="2dp">
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="版本检测"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"/>
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="版本检测"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:layout_marginRight="10dp"/>
+	</RelativeLayout>
+	<RelativeLayout android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    android:orientation="horizontal"
+	    android:background="#fff"
+	    android:layout_marginTop="2dp">
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="自动登录"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"/>
+    <CheckBox android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:drawableRight="@drawable/log_selector"
+        android:button="@null"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        />
+   
+	</RelativeLayout>
+	<Button android:id="@+id/btTuichu"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="退出"
+	    android:textColor="#fff"
+	    android:background="@drawable/commen_shape"
+	    android:layout_marginLeft="5dp"
+	    android:layout_marginRight="5dp"
+	    android:layout_marginTop="30dp"/>
+
+</LinearLayout>

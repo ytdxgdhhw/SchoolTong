@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    tools:context=".MainActivity" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpPic"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        >
+   </android.support.v4.view.ViewPager>
+	<RadioGroup 
+	    android:id="@+id/rgTop"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_alignBottom="@+id/vpPic"
+	    android:layout_marginTop="27dp"
+	    android:orientation="horizontal"
+	    >
+	   
+	</RadioGroup>
+	
+	<LinearLayout 
+	    android:id="@+id/ll"
+	    	android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:layout_below="@+id/vpPic"
+	    	
+	    	android:background="@drawable/user_infor_list_divider"
+	    >
+	    <TextView 
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="专题"
+	    	android:textSize="18sp"
+	    	android:padding="5dp"
+	    	android:layout_marginLeft="5dp"
+	        />
+	     <TextView android:id="@+id/tvMore"
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:text="更多动态"
+	    	android:textSize="14sp"
+	    	android:padding="5dp"
+	    	android:layout_marginLeft="5dp"
+	    	android:gravity="right"
+	    	android:layout_marginRight="5dp"
+	        />
+	</LinearLayout>
+	
+<RelativeLayout 
+    android:layout_below="@+id/ll"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp" >
+    <ImageView 
+        android:id="@+id/ivPic"
+        android:layout_width="72dp"
+        android:layout_height="53dp"
+        android:src="@drawable/news1_1"
+        android:scaleType="fitXY"
+        />
+	<TextView 
+	    android:id="@+id/tvTitle"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我校及时开治安东方会计师对方  "
+        android:layout_toRightOf="@+id/ivPic"
+        android:layout_marginLeft="5dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+	    />
+	
+	<TextView 
+	    android:id="@+id/tvTime"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2015年08月14日  "
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/ivPic"
+        android:layout_margin="5dp"
+	    />
+</RelativeLayout>
+	<LinearLayout 
+	    android:id="@+id/lll"
+	    	android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:layout_below="@+id/rl"
+	    	
+	    	android:background="@drawable/user_infor_list_divider"
+	    >
+	    <TextView 
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="今日动态"
+	    	android:textSize="18sp"
+	    	android:padding="5dp"
+	    	android:layout_marginLeft="5dp"
+	        />
+	     <TextView 
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:text="更多动态"
+	    	android:textSize="14sp"
+	    	android:padding="5dp"
+	    	android:layout_marginLeft="5dp"
+	    	android:gravity="right"
+	    	android:layout_marginRight="5dp"
+	        />
+	</LinearLayout>
+</RelativeLayout>
